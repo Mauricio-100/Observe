@@ -1,3 +1,5 @@
+// server.js
+
 import express from 'express';
 import { createServer } from 'http';
 import { Server } from 'socket.io';
@@ -51,15 +53,4 @@ io.on('connection', (socket) => {
 
 httpServer.listen(PORT, () => {
   console.log(`Le cerveau de Dragon écoute sur http://localhost:${PORT}`);
-});```
-
-### Prochaines Étapes
-
-1.  **Créez** toute cette structure de dossiers et de fichiers.
-2.  **Copiez-collez** le code dans les fichiers correspondants.
-3.  **Placez votre certificat `ca.pem`** dans le dossier `certs`.
-4.  **Mettez à jour le fichier `.env`** avec votre vrai mot de passe.
-5.  **Exécutez `npm install`** pour télécharger toutes les dépendances.
-6.  **Lancez le serveur** avec la commande `npm run dev`.
-
-Votre serveur Dragon est maintenant complet, structuré et prêt à fonctionner.
+});

@@ -1,0 +1,21 @@
+{
+  "name": "dragon-server",
+  "version": "1.0.0",
+  "description": "Le cerveau central de l'IA Dragon, avec une mémoire MySQL.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "author": "Mauricio",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mysql2": "^3.10.1",
+    "node-fetch": "^3.3.2",
+    "socket.io": "^4.7.5",
+    "string-similarity": "^4.0.4"
+  }
+}
